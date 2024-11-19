@@ -1,0 +1,32 @@
+1. create project (jetpack compose default activity)
+1.1 import in build.gradle
+    implementation("androidx.glance:glance:1.1.1")
+    implementation("androidx.glance:glance-appwidget:1.1.1")
+    implementation("androidx.glance:glance-appwidget-preview:1.1.1")
+    implementation("androidx.glance:glance-preview:1.1.1")
+
+2. create object class for Widget
+2.1 inherit from GlanceAppWidget
+2.2 override provideGlance()
+
+3. create WidgetContent Composable
+3.1 use WidgetContent Composable in Widget
+
+4. Make Preview
+
+5. impl layout
+5.1 impl count
+    val countKey = intPreferencesKey("count")
+    val count = currentState(key = Widget.countKey) ?: 0
+5.2 impl onclick
+5.3 add WidgetReceiver
+5.4 pass content as arg
+
+6. add Widget xml
+
+7. register in manifest
+7.1 receiver
+
+8. debug
+
+9. add more features
